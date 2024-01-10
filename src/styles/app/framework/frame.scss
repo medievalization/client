@@ -1,0 +1,48 @@
+$fw_frame_border-radius: 5px;
+$fw_frame_margin: 5px;
+
+@mixin frame(
+  $margins: (
+    top,
+    bottom,
+    left,
+    right,
+  )
+) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @each $side in $margins {
+    padding-#{$side}: $fw_frame_margin;
+  }
+
+  color: white;
+
+  .container {
+    border-radius: $fw_frame_border-radius;
+    padding: 5px;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+
+      width: 100%;
+      height: 100%;
+
+      background-color: rgba(50, 50, 50, 0.5);
+      border-radius: $fw_frame_border-radius;
+    }
+  }
+}

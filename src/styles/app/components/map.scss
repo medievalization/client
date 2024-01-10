@@ -1,0 +1,56 @@
+@import "../framework/frame.scss";
+
+main > div {
+  margin-left: $fw_frame_margin;
+  border-radius: $fw_frame_border-radius;
+  overflow: hidden;
+
+  #overlay {
+    pointer-events: none;
+
+    button {
+      pointer-events: all;
+    }
+  }
+}
+
+#map-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  position: relative;
+  top: 0px;
+  left: 0px;
+
+  user-select: none;
+
+  & > x-chunkmap-row {
+    display: flex;
+    flex-direction: row;
+
+    & > x-chunk {
+      display: block;
+
+      & > x-chunk-row {
+        display: flex;
+        flex-direction: row;
+
+        & > x-chunk-tile {
+          background-color: #ff00ff;
+
+          width: 100px;
+          height: 100px;
+
+          &.tile_0 {
+            background-color: #f0d9b5;
+          }
+
+          &.tile_1 {
+            background-color: #b58863;
+          }
+        }
+      }
+    }
+  }
+}

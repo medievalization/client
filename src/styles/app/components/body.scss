@@ -1,0 +1,11 @@
+body {
+  background-image: url("/assets/app/background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  & > * {
+    background: transparent;
+    backdrop-filter: blur(10px);
+  }
+}

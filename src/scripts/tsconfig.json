@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "outDir": "../../../dist/js",
+    "module": "ES2022",
+    "sourceMap": true,
+    "sourceRoot": "/dist/js/src/"
+  },
+  "include": ["**/*.ts"]
+}

@@ -1,0 +1,1 @@
+sass --watch "./:../../../dist/css" --style "compressed" --embed-sources

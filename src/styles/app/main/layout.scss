@@ -1,0 +1,38 @@
+html,
+body {
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  main {
+    flex-grow: 1;
+  }
+}
+
+main {
+  display: flex;
+
+  & > div {
+    flex-grow: 1;
+
+    position: relative;
+
+    & > div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  & > aside {
+    min-width: 20%;
+    width: 20%;
+  }
+}

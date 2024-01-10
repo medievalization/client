@@ -1,0 +1,10 @@
+@use "../framework/frame.scss";
+
+body > header,
+body > footer {
+  @include frame.frame;
+}
+
+main > aside {
+  @include frame.frame((left, right));
+}
