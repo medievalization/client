@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "sass: watch - src/client/styles",
+      "type": "process",
+      "group": "build",
+      "command": "sass",
+      "args": [
+        "--watch",
+        "src/client/styles:dist/css",
+        "--style",
+        "compressed",
+        "--embed-sources",
+        "--no-color",
+        "--no-unicode",
+        "--trace"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    },
+    {
+      "type": "typescript",
+      "tsconfig": "src/client/scripts/tsconfig.json",
+      "option": "watch",
+      "problemMatcher": ["$tsc-watch"],
+      "group": "build",
+      "label": "tsc: watch - src/client/scripts/tsconfig.json"
+    }
+  ]
+}
