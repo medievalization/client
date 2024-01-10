@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "sass: watch - src/client/styles",
+      "label": "sass: watch - src/styles",
       "type": "process",
       "group": "build",
       "command": "sass",
@@ -22,7 +22,7 @@
     },
     {
       "type": "typescript",
-      "tsconfig": "src/client/scripts/tsconfig.json",
+      "tsconfig": "src/scripts/tsconfig.json",
       "option": "watch",
       "problemMatcher": ["$tsc-watch"],
       "group": "build",
