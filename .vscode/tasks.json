@@ -8,7 +8,7 @@
       "command": "sass",
       "args": [
         "--watch",
-        "src/client/styles:dist/css",
+        "src/styles:dist/css",
         "--style",
         "compressed",
         "--embed-sources",
@@ -26,7 +26,7 @@
       "option": "watch",
       "problemMatcher": ["$tsc-watch"],
       "group": "build",
-      "label": "tsc: watch - src/client/scripts/tsconfig.json"
+      "label": "tsc: watch - src/scripts/tsconfig.json"
     }
   ]
 }
